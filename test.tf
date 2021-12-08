@@ -4,7 +4,7 @@ provider "aws" {
 
 #Security Group for EC2 instance
 resource "aws_security_group" "Security_group_instance" {
-  name        = "sgrp"
+  name        = "sgrp1"
   description = "ssh and http"
 
 
@@ -54,7 +54,7 @@ resource "aws_security_group" "Security_group_instance" {
   ]
 
   tags = {
-    Name = "sgrp"
+    Name = "sgrp1"
   }
 }
 
