@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "us-east-1"
+}
+
 #Security Group for EC2 instance
 resource "aws_security_group" "Security_group_instance" {
   name        = "sgrp"
